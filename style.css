@@ -1,0 +1,99 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Page basics */
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card link */
+.card {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image container */
+.media {
+  position: relative;
+  width: 300px;
+}
+
+/* Image itself */
+.media img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover zoom effect */
+.card:hover .media img {
+  transform: scale(1.08);
+}
+
+/* Caption on image */
+.caption {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+/* Underline first letter of all captions */
+.caption::first-letter {
+  text-decoration: underline;
+}
+/* 3 columns on top, 3 below */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 18px;
+}
+/* Detail page typography */
+.page-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Large image */
+.detail-image {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Description text */
+.description {
+  max-width: 700px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Optional bullets */
+.details {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+/* Back link */
+.back-link a {
+  text-decoration: none;
+  font-size: 14px;
+}
